@@ -12,7 +12,57 @@
 		287E8F631DD2EA7C004378BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 287E8F611DD2EA7C004378BC /* Main.storyboard */; };
 		287E8F651DD2EA7C004378BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 287E8F641DD2EA7C004378BC /* Assets.xcassets */; };
 		287E8F681DD2EA7C004378BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 287E8F661DD2EA7C004378BC /* LaunchScreen.storyboard */; };
+		287E8F761DD2EA92004378BC /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287E8F751DD2EA92004378BC /* ShareViewController.swift */; };
+		287E8F791DD2EA92004378BC /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 287E8F771DD2EA92004378BC /* MainInterface.storyboard */; };
+		287E8F7D1DD2EA92004378BC /* MyShareExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 287E8F731DD2EA92004378BC /* MyShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		287E8F8B1DD2EAAB004378BC /* MyCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 287E8F891DD2EAAB004378BC /* MyCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		287E8F8E1DD2EAAB004378BC /* MyCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 287E8F871DD2EAAB004378BC /* MyCore.framework */; };
+		287E8F8F1DD2EAAB004378BC /* MyCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 287E8F871DD2EAAB004378BC /* MyCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		287E8F941DD2EAC8004378BC /* MyCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 287E8F871DD2EAAB004378BC /* MyCore.framework */; };
+		287E8F961DD2EB01004378BC /* SomeObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287E8F951DD2EB01004378BC /* SomeObject.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		287E8F7B1DD2EA92004378BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 287E8F521DD2EA7C004378BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 287E8F721DD2EA92004378BC;
+			remoteInfo = MyShareExtension;
+		};
+		287E8F8C1DD2EAAB004378BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 287E8F521DD2EA7C004378BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 287E8F861DD2EAAB004378BC;
+			remoteInfo = MyCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		287E8F811DD2EA92004378BC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				287E8F7D1DD2EA92004378BC /* MyShareExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		287E8F931DD2EAAB004378BC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				287E8F8F1DD2EAAB004378BC /* MyCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		287E8F5A1DD2EA7C004378BC /* MyMainApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMainApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +72,34 @@
 		287E8F641DD2EA7C004378BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		287E8F671DD2EA7C004378BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		287E8F691DD2EA7C004378BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		287E8F731DD2EA92004378BC /* MyShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		287E8F751DD2EA92004378BC /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		287E8F781DD2EA92004378BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		287E8F7A1DD2EA92004378BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		287E8F871DD2EAAB004378BC /* MyCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MyCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		287E8F891DD2EAAB004378BC /* MyCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCore.h; sourceTree = "<group>"; };
+		287E8F8A1DD2EAAB004378BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		287E8F951DD2EB01004378BC /* SomeObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SomeObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		287E8F571DD2EA7C004378BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				287E8F8E1DD2EAAB004378BC /* MyCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		287E8F701DD2EA92004378BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				287E8F941DD2EAC8004378BC /* MyCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		287E8F831DD2EAAB004378BC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +113,8 @@
 			isa = PBXGroup;
 			children = (
 				287E8F5C1DD2EA7C004378BC /* MyMainApp */,
+				287E8F741DD2EA92004378BC /* MyShareExtension */,
+				287E8F881DD2EAAB004378BC /* MyCore */,
 				287E8F5B1DD2EA7C004378BC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				287E8F5A1DD2EA7C004378BC /* MyMainApp.app */,
+				287E8F731DD2EA92004378BC /* MyShareExtension.appex */,
+				287E8F871DD2EAAB004378BC /* MyCore.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,7 +142,38 @@
 			path = MyMainApp;
 			sourceTree = "<group>";
 		};
+		287E8F741DD2EA92004378BC /* MyShareExtension */ = {
+			isa = PBXGroup;
+			children = (
+				287E8F751DD2EA92004378BC /* ShareViewController.swift */,
+				287E8F771DD2EA92004378BC /* MainInterface.storyboard */,
+				287E8F7A1DD2EA92004378BC /* Info.plist */,
+			);
+			path = MyShareExtension;
+			sourceTree = "<group>";
+		};
+		287E8F881DD2EAAB004378BC /* MyCore */ = {
+			isa = PBXGroup;
+			children = (
+				287E8F891DD2EAAB004378BC /* MyCore.h */,
+				287E8F8A1DD2EAAB004378BC /* Info.plist */,
+				287E8F951DD2EB01004378BC /* SomeObject.swift */,
+			);
+			path = MyCore;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		287E8F841DD2EAAB004378BC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				287E8F8B1DD2EAAB004378BC /* MyCore.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		287E8F591DD2EA7C004378BC /* MyMainApp */ = {
@@ -74,15 +183,54 @@
 				287E8F561DD2EA7C004378BC /* Sources */,
 				287E8F571DD2EA7C004378BC /* Frameworks */,
 				287E8F581DD2EA7C004378BC /* Resources */,
+				287E8F811DD2EA92004378BC /* Embed App Extensions */,
+				287E8F931DD2EAAB004378BC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				287E8F7C1DD2EA92004378BC /* PBXTargetDependency */,
+				287E8F8D1DD2EAAB004378BC /* PBXTargetDependency */,
 			);
 			name = MyMainApp;
 			productName = MyMainApp;
 			productReference = 287E8F5A1DD2EA7C004378BC /* MyMainApp.app */;
 			productType = "com.apple.product-type.application";
+		};
+		287E8F721DD2EA92004378BC /* MyShareExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 287E8F7E1DD2EA92004378BC /* Build configuration list for PBXNativeTarget "MyShareExtension" */;
+			buildPhases = (
+				287E8F6F1DD2EA92004378BC /* Sources */,
+				287E8F701DD2EA92004378BC /* Frameworks */,
+				287E8F711DD2EA92004378BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyShareExtension;
+			productName = MyShareExtension;
+			productReference = 287E8F731DD2EA92004378BC /* MyShareExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		287E8F861DD2EAAB004378BC /* MyCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 287E8F901DD2EAAB004378BC /* Build configuration list for PBXNativeTarget "MyCore" */;
+			buildPhases = (
+				287E8F821DD2EAAB004378BC /* Sources */,
+				287E8F831DD2EAAB004378BC /* Frameworks */,
+				287E8F841DD2EAAB004378BC /* Headers */,
+				287E8F851DD2EAAB004378BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyCore;
+			productName = MyCore;
+			productReference = 287E8F871DD2EAAB004378BC /* MyCore.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -97,6 +245,17 @@
 					287E8F591DD2EA7C004378BC = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = R87VXWZHB6;
+						ProvisioningStyle = Automatic;
+					};
+					287E8F721DD2EA92004378BC = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = R87VXWZHB6;
+						ProvisioningStyle = Automatic;
+					};
+					287E8F861DD2EAAB004378BC = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = R87VXWZHB6;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -115,6 +274,8 @@
 			projectRoot = "";
 			targets = (
 				287E8F591DD2EA7C004378BC /* MyMainApp */,
+				287E8F721DD2EA92004378BC /* MyShareExtension */,
+				287E8F861DD2EAAB004378BC /* MyCore */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +291,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		287E8F711DD2EA92004378BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				287E8F791DD2EA92004378BC /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		287E8F851DD2EAAB004378BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -142,7 +318,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		287E8F6F1DD2EA92004378BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				287E8F761DD2EA92004378BC /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		287E8F821DD2EAAB004378BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				287E8F961DD2EB01004378BC /* SomeObject.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		287E8F7C1DD2EA92004378BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 287E8F721DD2EA92004378BC /* MyShareExtension */;
+			targetProxy = 287E8F7B1DD2EA92004378BC /* PBXContainerItemProxy */;
+		};
+		287E8F8D1DD2EAAB004378BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 287E8F861DD2EAAB004378BC /* MyCore */;
+			targetProxy = 287E8F8C1DD2EAAB004378BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		287E8F611DD2EA7C004378BC /* Main.storyboard */ = {
@@ -159,6 +364,14 @@
 				287E8F671DD2EA7C004378BC /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		287E8F771DD2EA92004378BC /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				287E8F781DD2EA92004378BC /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -260,6 +473,7 @@
 		287E8F6D1DD2EA7C004378BC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = R87VXWZHB6;
 				INFOPLIST_FILE = MyMainApp/Info.plist;
@@ -273,6 +487,7 @@
 		287E8F6E1DD2EA7C004378BC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = R87VXWZHB6;
 				INFOPLIST_FILE = MyMainApp/Info.plist;
@@ -280,6 +495,79 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.neilsstudio.MyMainApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		287E8F7F1DD2EA92004378BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = R87VXWZHB6;
+				INFOPLIST_FILE = MyShareExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.neilsstudio.MyMainApp.MyShareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		287E8F801DD2EA92004378BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = R87VXWZHB6;
+				INFOPLIST_FILE = MyShareExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.neilsstudio.MyMainApp.MyShareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		287E8F911DD2EAAB004378BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = R87VXWZHB6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MyCore/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.neilsstudio.MyCore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		287E8F921DD2EAAB004378BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = R87VXWZHB6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MyCore/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.neilsstudio.MyCore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -300,6 +588,22 @@
 			buildConfigurations = (
 				287E8F6D1DD2EA7C004378BC /* Debug */,
 				287E8F6E1DD2EA7C004378BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		287E8F7E1DD2EA92004378BC /* Build configuration list for PBXNativeTarget "MyShareExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				287E8F7F1DD2EA92004378BC /* Debug */,
+				287E8F801DD2EA92004378BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		287E8F901DD2EAAB004378BC /* Build configuration list for PBXNativeTarget "MyCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				287E8F911DD2EAAB004378BC /* Debug */,
+				287E8F921DD2EAAB004378BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
