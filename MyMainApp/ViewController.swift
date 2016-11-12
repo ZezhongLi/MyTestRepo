@@ -7,12 +7,15 @@
 //
 
 import UIKit
-
+import MyCore
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let obj = SomeObject()
+        obj.sharable = true
+        print(obj.sharable ? "Share" : "Unshare")
         // Do any additional setup after loading the view, typically from a nib.
     }
 
